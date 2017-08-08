@@ -1,5 +1,10 @@
 #!/bin/bash
 
+mkdir -p ./i386/repodata/
+mkdir -p ./x86_64/repodata/
+rm -f ./i386/repodata/*
+rm -f ./x86_64/repodata/*
+
 tmp=`mktemp`
 tmp2=`mktemp`
 wget -N -P ./i386/repodata http://linuxdownload.adobe.com/linux/i386/repodata/repomd.xml
